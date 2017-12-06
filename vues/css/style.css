@@ -1,0 +1,280 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+hr {
+	margin: 5px;
+}
+
+h1 {
+	margin: 0px;
+}
+
+/*****************BANDEAU TITRE*******************/
+.prenom {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+}
+
+.nom {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+}
+
+.titre-site {
+	margin-top: 10px;
+	line-height: 0.8;
+}
+
+.bandeau-header {
+	padding: 10px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	background-color: white;
+}
+
+.lien-header-acceuil {
+	color: black;
+}
+
+.lien-header-acceuil:hover {
+	text-decoration: none;
+	color: black;
+}
+
+
+/********************MENU***********************/
+.menu-header {
+	margin-bottom: 10px;
+}
+
+.titre-menu {
+	margin: 10px;
+}
+
+ul li a {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+ul li a:hover {
+	color: rgba(0, 0, 0, 1); ;
+}
+
+.navbar {
+	padding: 0px;
+	line-height: 0.8;
+}
+
+.bouton-menu-responsive {
+	border-color: rgba(50, 50, 50, 1);
+	padding-top: 2px;
+	padding-bottom: 0px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.hr-header {
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.5);
+}
+
+
+/********************CORPS PAGE ACCUEIL******************/
+/*GLOBAL*/
+#showreel {
+	margin-top: 134px;
+}
+
+#portfolio, #contact, #competences, #parcours {
+	margin-top: 50px;
+}
+
+.titre-rubrique {
+	background: linear-gradient(to right, white, #D1E6EB, white);
+}
+
+/*RUBRIQUE PORTFOLIO*/
+.img-accueil {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.superpose {
+	width: 25% !important;
+	height: 25% !important;
+	padding: 5px;
+}
+
+.zone-survol {
+	position: absolute;
+}
+
+.box-white {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	opacity: 0.75;
+}
+
+.text-survol {
+	color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+
+/*RUBRIQUE COMPETENCES*/
+.bloc-savoir-faire {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.conteneur-competence {
+	width: 20%;
+}
+
+.conteneur-competence img {
+	width: 100%;
+}
+
+.bloc-competences-vide {
+	height: 24px;
+	background-color: #138496;
+	opacity: 0.2;
+}
+
+.bloc-competences-plein {
+	height: 24px;
+	background-color: #138496;
+}
+
+.test {
+	display: float !important;
+	float: right;
+}
+
+
+/*RUBRIQUE PARCOURS*/
+.cercle-jalon {
+	position: absolute;
+	margin-top: 8px;
+	color: #138496;
+	z-index: 1;
+}
+
+
+
+/*****************FORMULAIRE CONTACT***************/
+.formulaire {
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+	margin-bottom: 140px !important;
+	margin-top: 20px !important;
+/*	border-style: solid;*/
+
+}
+
+
+
+/********************PAGE PROJET******************/
+.hr-page {
+	margin-top: 134px;
+}
+
+.conteneur-image-projet {
+	width: 50%;
+	height: 50%;
+	background-color: white;
+	border-style: none;
+}
+
+.img-projet {
+	max-width: 100% !important;
+	max-height: 100% !important;
+	padding: 5px;
+	border-style: none;
+}
+
+.img-projet:hover {
+	cursor: pointer;
+}
+
+video {
+	padding: 5px;
+}
+
+.description-projet {
+	margin-top: 10px;
+}
+
+.modal-body {
+	padding: 5px !important;
+}
+
+.modal-dialog {
+	max-width: 40%;
+	/*max-height: 500px;*/
+}
+
+.img-projet-modal {
+	max-width: 100% !important;
+	max-height: 100% !important;
+	padding: 5px;
+	border-style: none;
+}
+
+mark {
+	color: #138496;
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.gif {
+	width: 100%;
+	padding: 5px;
+}
+
+
+
+/************************MEDIA QUERIES*******************/
+@media all and (max-width: 992px) {
+	.superpose {
+		width: 50% !important;
+		height: 50% !important;
+	}
+
+	.conteneur-image-projet {
+		width: 50%;
+		height: 50%;
+	}
+
+	.modal-dialog {
+		max-width: 90%;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.superpose {
+		width: 50% !important;
+		height: 50% !important;
+		padding: 5px;
+	}
+
+	.conteneur-image-projet {
+		width: 100%;
+		height: 100%;
+	}
+}
+
